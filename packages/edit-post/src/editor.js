@@ -77,7 +77,7 @@ function Editor( {
 	const editorSettings = useMemo(
 		() => ( {
 			...settings,
-			// TODO: This key should have a better names
+			// TODO: This key should have a better name
 			__globalStyles: styles,
 			onNavigateToEntityRecord,
 			onNavigateToPreviousEntityRecord,
