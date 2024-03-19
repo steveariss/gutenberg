@@ -241,7 +241,6 @@ function useBlockEditorSettings( settings, postType, postId ) {
 					BLOCK_EDITOR_SETTINGS.includes( key )
 				)
 			),
-			// TODO: This key should have a better name
 			__experimentalStyles: styles,
 			allowedBlockTypes,
 			allowRightClickOverrides,
@@ -306,6 +305,7 @@ function useBlockEditorSettings( settings, postType, postId ) {
 			pageForPosts,
 			postType,
 			setIsInserterOpened,
+			styles,
 		]
 	);
 }
