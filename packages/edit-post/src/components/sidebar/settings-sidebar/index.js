@@ -41,7 +41,7 @@ import { privateApis as componentsPrivateApis } from '@wordpress/components';
 import { unlock } from '../../../lock-unlock';
 
 const { Tabs } = unlock( componentsPrivateApis );
-const { PatternSchemaPanel } = unlock( editorPrivateApis );
+const { PatternContentPanel } = unlock( editorPrivateApis );
 
 const SIDEBAR_ACTIVE_BY_DEFAULT = Platform.select( {
 	web: true,
@@ -121,7 +121,7 @@ const SidebarContent = ( {
 							<PostExcerptPanel />
 							<PostDiscussionPanel />
 							<PageAttributesPanel />
-							<PatternSchemaPanel />
+							<PatternContentPanel />
 							<MetaBoxes location="side" />
 						</>
 					) }

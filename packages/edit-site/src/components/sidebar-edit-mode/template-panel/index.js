@@ -32,7 +32,7 @@ import { useAvailablePatterns } from './hooks';
 import { TEMPLATE_PART_POST_TYPE } from '../../../utils/constants';
 import { unlock } from '../../../lock-unlock';
 
-const { PatternSchemaPanel } = unlock( editorPrivateApis );
+const { PatternContentPanel } = unlock( editorPrivateApis );
 
 const { useHistory } = unlock( routerPrivateApis );
 
@@ -147,7 +147,7 @@ export default function TemplatePanel() {
 			<PostExcerptPanel />
 			<PostDiscussionPanel />
 			<PageAttributesPanel />
-			<PatternSchemaPanel />
+			<PatternContentPanel />
 		</>
 	);
 }
