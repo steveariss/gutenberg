@@ -242,7 +242,7 @@ function useBlockEditorSettings( settings, postType, postId ) {
 				)
 			),
 			// TODO: This key should have a better name
-			__globalStyles: styles,
+			__experimentalStyles: styles,
 			allowedBlockTypes,
 			allowRightClickOverrides,
 			focusMode: focusMode && ! forceDisableFocusMode,
