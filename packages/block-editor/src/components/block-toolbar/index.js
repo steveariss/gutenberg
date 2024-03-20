@@ -67,6 +67,7 @@ export function PrivateBlockToolbar( {
 		shouldShowVisualToolbar,
 		showParentSelector,
 		isUsingBindings,
+		selectedBlockArea,
 	} = useSelect( ( select ) => {
 		const {
 			getBlockName,
@@ -116,6 +117,8 @@ export function PrivateBlockToolbar( {
 				selectedBlockClientIds.length === 1 &&
 				_isDefaultEditingMode,
 			isUsingBindings: _isUsingBindings,
+			selectedBlockArea: getBlockAttributes( selectedBlockClientId )
+				?.area,
 		};
 	}, [] );
 
@@ -186,6 +189,7 @@ export function PrivateBlockToolbar( {
 								<BlockMover
 									clientIds={ blockClientIds }
 									hideDragHandle={ hideDragHandle }
+									selectedBlockArea={ selectedBlockArea }
 								/>
 							</ToolbarGroup>
 						</div>
