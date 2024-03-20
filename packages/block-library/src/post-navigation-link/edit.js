@@ -187,6 +187,7 @@ export default function PostNavigationLinkEdit( {
 					</span>
 				) }
 				<RichText
+					identifier="label"
 					tagName="a"
 					aria-label={ ariaLabel }
 					placeholder={ placeholder }

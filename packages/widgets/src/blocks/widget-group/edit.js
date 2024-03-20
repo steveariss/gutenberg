@@ -51,6 +51,7 @@ function PreviewContent( { attributes, setAttributes } ) {
 	return (
 		<>
 			<RichText
+				identifier="title"
 				tagName="h2"
 				className="widget-title"
 				allowedFormats={ [] }
